@@ -10,6 +10,7 @@ class ChatCell: UITableViewCell {
         imageView.translatesAutoresizingMaskIntoConstraints = false
         imageView.backgroundColor = .clear
         imageView.layer.cornerRadius = 25
+        imageView.layer.masksToBounds = true
         imageView.contentMode = .scaleAspectFit
         imageView.image = icon
 
