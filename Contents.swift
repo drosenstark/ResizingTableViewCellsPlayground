@@ -69,6 +69,11 @@ class ChatCell: UITableViewCell {
     }
 }
 
+extension ChatCell {
+    override var textLabel: UILabel? { return messageLabel }
+    override var imageView: UIImageView? { return iconImageView }
+}
+
 class MyViewController : UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     lazy var tableView: UITableView = {
